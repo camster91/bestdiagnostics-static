@@ -1,0 +1,68 @@
+# Aura — public web crawl rules.
+User-agent: *
+Disallow: /*?selected_service=
+Disallow: /*&latepoint=
+Disallow: /*?latepoint=
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-content/plugins/
+Disallow: /readme.html
+Disallow: /refer/
+
+Allow: /wp-admin/admin-ajax.php
+
+# AI crawlers — explicitly allowed for AEO (no restrictions).
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://bestdiagnostics.net/sitemap_index.xml
+Sitemap: https://bestdiagnostics.net/llms.txt
